@@ -81,10 +81,12 @@ export default function EffortEasePage() {
 
       {/* Sticky Footer */}
       <footer className="w-full py-6 text-center text-xs text-muted-foreground space-y-1 border-t border-border/10 bg-background/80 backdrop-blur-md sticky bottom-0 z-50">
-        <p className="font-medium text-primary/90">
-          made with <span className="text-destructive mx-0.5">❤️</span> from brandon. Please like and subscriber
-        </p>
-        <p>© {year || '2024'} EffortEase Tasks. Powered by AI.</p>
+        <div className="max-w-2xl mx-auto px-4">
+          <p className="font-medium text-primary/90">
+            made with <span className="text-destructive mx-0.5">❤️</span> from brandon. Please like and subscriber
+          </p>
+          <p>© {year || '2024'} EffortEase Tasks. Powered by AI.</p>
+        </div>
       </footer>
     </div>
   );
