@@ -54,7 +54,8 @@ export function TaskInput({ onTaskCreated }: TaskInputProps) {
           type="submit" 
           disabled={!description.trim() || isPending}
           size="lg"
-          className="bg-primary hover:bg-primary/90 rounded-lg px-6"
+          variant="default"
+          className="bg-primary hover:bg-primary/90 rounded-lg px-6 text-primary-foreground"
         >
           {isPending ? (
             <Sparkles className="animate-pulse h-5 w-5" />

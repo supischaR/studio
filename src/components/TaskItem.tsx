@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Check, Trash2, Clock } from 'lucide-react';
+import { Trash2, Clock } from 'lucide-react';
 import { Task } from '@/lib/types';
 import { toggleTaskCompletion, deleteTask } from '@/app/actions';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -83,7 +83,7 @@ export function TaskItem({ task, onUpdate }: TaskItemProps) {
         size="icon"
         onClick={handleDelete}
         disabled={isUpdating}
-        className="opacity-0 group-hover:opacity-100 text-muted-foreground hover:text-destructive transition-opacity"
+        className="opacity-0 group-hover:opacity-100 text-muted-foreground hover:text-primary transition-opacity"
       >
         <Trash2 className="h-5 w-5" />
       </Button>
