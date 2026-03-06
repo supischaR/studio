@@ -76,7 +76,8 @@ export default function EffortEasePage() {
         </section>
 
         {/* Footer info */}
-        <footer className="pt-8 text-center text-xs text-muted-foreground">
+        <footer className="pt-8 text-center text-xs text-muted-foreground space-y-2">
+          <p className="font-medium text-primary/80">made with <span className="text-destructive">❤️</span> from brandon. Please like and subscriber</p>
           <p>© {new Date().getFullYear()} EffortEase Tasks. Powered by AI.</p>
         </footer>
       </div>

@@ -79,13 +79,13 @@ export function TaskItem({ task, onUpdate }: TaskItemProps) {
       </div>
 
       <Button
-        variant="ghost"
+        variant="default"
         size="icon"
         onClick={handleDelete}
         disabled={isUpdating}
-        className="opacity-0 group-hover:opacity-100 text-muted-foreground hover:text-primary transition-opacity"
+        className="opacity-0 group-hover:opacity-100 bg-primary hover:bg-primary/90 text-primary-foreground transition-opacity h-8 w-8 rounded-lg"
       >
-        <Trash2 className="h-5 w-5" />
+        <Trash2 className="h-4 w-4" />
       </Button>
     </div>
   );
